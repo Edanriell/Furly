@@ -1,0 +1,94 @@
+{
+  "Products": [
+    {
+      "id": 0,
+      "productName": "Платье Spring",
+      "productImageAlt": "Платье Spring",
+      "productPrice": "4 500 ₽"
+    },
+    {
+      "id": 1,
+      "productName": "Костюм Beige",
+      "productImageAlt": "Костюм Beige",
+      "productPrice": "8 500 ₽"
+    },
+    {
+      "id": 2,
+      "productName": "Джинсовое платье Pink",
+      "productImageAlt": "Джинсовое платье Pink",
+      "productPrice": "6 500 ₽"
+    },
+    {
+      "id": 3,
+      "productName": "Худи Beige",
+      "productImageAlt": "Худи Beige",
+      "productPrice": "3 500 ₽"
+    },
+    {
+      "id": 4,
+      "productName": "Худи Sand",
+      "productImageAlt": "Худи Sand",
+      "productPrice": "3 500 ₽"
+    },
+    {
+      "id": 5,
+      "productName": "Платье-комбинация Black",
+      "productImageAlt": "Платье-комбинация Black",
+      "productPrice": "6 500 ₽"
+    },
+    {
+      "id": 6,
+      "productName": "Тренч Sad Autumn",
+      "productImageAlt": "Тренч Sad Autumn",
+      "productPrice": "12 000 ₽"
+    },
+    {
+      "id": 7,
+      "productName": "Костюм Grey",
+      "productImageAlt": "Костюм Grey",
+      "productPrice": "8 500 ₽"
+    },
+    {
+      "id": 8,
+      "productName": "Платье Ornament",
+      "productImageAlt": "Платье Ornament",
+      "productPrice": "4 500 ₽"
+    },
+    {
+      "id": 9,
+      "productName": "Пальто Thunder",
+      "productImageAlt": "Пальто Thunder",
+      "productPrice": "10 000 ₽"
+    },
+    {
+      "id": 10,
+      "productName": "Пиджак Duon",
+      "productImageAlt": "Пиджак Duon",
+      "productPrice": "7 500 ₽"
+    },
+    {
+      "id": 11,
+      "productName": "Пальто Flax",
+      "productImageAlt": "Пальто Flax",
+      "productPrice": "13 500 ₽"
+    }
+  ],
+  "emails": [
+    {
+      "email": "jenixberg@gmail.com",
+      "id": 1
+    },
+    {
+      "email": "jenixberg@gmail.com",
+      "id": 2
+    },
+    {
+      "email": "test@test.lv",
+      "id": 3
+    },
+    {
+      "email": "jenixberg@gmail.com",
+      "id": 4
+    }
+  ]
+}

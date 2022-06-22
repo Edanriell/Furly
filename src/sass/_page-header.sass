@@ -1,0 +1,76 @@
+$mainNavElements: 5
+
+=fixImageBug
+  vertical-align: middle
+  max-width: 100%
+  height: auto
+
+=mainNavFontStyles
+  font-family: "Manrope-Medium"
+  font-weight: 500
+  font-style: normal
+  font-size: 1.6rem
+  line-height: 2.08rem
+
+@for $i from 1 through $mainNavElements
+  .page-header__main-nav__content__item:nth-child(#{$i})
+    +mainNavFontStyles
+    margin: 0 30px 0 0
+
+.page-header
+  grid-row: header
+
+  &__main-nav
+    display: grid
+    grid-template-columns: 9rem 4fr 1fr
+    column-gap: 100px
+    min-height: 136px
+    align-items: center
+
+    &__logotype
+      +fixImageBug
+      width: 90px
+      height: 36px
+
+    &__content
+      display: flex
+      flex-wrap: wrap
+      margin: 0 0 0 234px
+
+      &__item
+        list-style: none
+
+        &:last-child
+          margin: 0
+
+        &__link
+          text-decoration: none
+          color: rgba(33, 30, 29, 1)
+
+          &:hover
+            text-decoration: underline
+
+    &__user-nav
+      display: flex
+      flex-wrap: wrap
+      justify-content: flex-end
+
+      &__item
+        list-style: none
+
+        &:nth-child(3) img:last-child
+          margin: 0
+
+        &__link
+          text-decoration: none   
+
+          &__image
+            +fixImageBug
+            width: 26px
+            height: 26px
+            margin: 0 25px 0 0
+            transition: all 0.20s
+            
+            &:hover
+              transform: scale(1.4)
+                

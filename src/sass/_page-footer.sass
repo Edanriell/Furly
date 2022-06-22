@@ -1,0 +1,148 @@
+=fixImageBug
+  vertical-align: middle
+  max-width: 100%
+  height: auto
+
+=footerTextCopyrightAndPolitics
+  font-family: "Manrope-Regular"
+  font-weight: 400
+  font-style: normal
+  font-size: 1.4rem
+  line-height: 1.82rem
+  color: rgba(33, 30, 29, 1)
+
+=footerTextMain
+  font-family: "Manrope-Regular"
+  font-weight: 400
+  font-style: normal
+  font-size: 1.6rem
+  line-height: 2.08rem
+  color: rgba(33, 30, 29, 1)
+
+=flexProps
+  display: flex
+  flex-direction: column
+  flex-wrap: nowrap
+    
+.page-footer
+  grid-row: footer
+  background-color: rgba(222, 219, 217, 1)
+
+  &__content
+    display: grid
+    grid-template-columns: repeat(4, auto)
+    padding: 70px 0 0 0
+    column-gap: 165px
+
+    &__info
+      grid-column: 1 / 2
+      +flexProps
+
+      &__logotype
+        grid-row: logotype
+        width: 90px
+        height: 36px
+        +fixImageBug
+
+      &__copyright
+        grid-row: copyright 
+        margin: 20px 0 0 0
+        +footerTextCopyrightAndPolitics
+
+      &__politics
+        grid-row: politics
+        margin: 10px 0 0 0
+        +footerTextCopyrightAndPolitics
+
+    &__about-us
+      grid-column: 2 / 3
+      +flexProps
+
+      &__contacts
+        +flexProps
+
+        &__email
+          +footerTextMain
+          text-decoration: none
+
+        &__phone
+          +footerTextMain
+          margin: 21px 0 0 0
+          text-decoration: none
+
+      &__social
+        margin: 21px 0 0 0
+        display: grid
+        grid-template-columns: repeat(4, 20px)
+        column-gap: 18px
+        list-style: none
+
+        &__item__link__icon
+          transition: all 0.20s
+
+          &:hover
+            transform: scale(1.4)
+
+    &__footer-nav
+      grid-column: 3 / 4
+      +flexProps
+      flex-wrap: wrap
+      list-style: none
+
+      &__item
+        margin: 0 0 21px 0
+
+        &:hover
+          text-decoration: underline
+
+        &__link
+          +footerTextMain
+          text-decoration: none
+
+    &__subscribe-form
+      grid-column: 4 / 5
+      display: grid
+      grid-template-rows: repeat(2, auto)
+      grid-template-columns: 1fr 26px
+      row-gap: 46px
+      width: 350px
+
+      &__label
+        grid-row: 1 / 2
+        grid-column: 1 / -1
+        +footerTextMain
+
+      &__input
+        padding: 0 0 11px 0
+        align-self: center
+        grid-row: 2 / 3
+        grid-column: 1 / -1
+        +footerTextMain
+        color: rgba(33, 30, 29, 0.3)
+        border: none
+        z-index: 1
+        background-color: transparent
+        border-bottom: 1px solid rgba(33, 30, 29, 0.1)
+        outline: none
+
+      &__submit
+        display: block
+        align-self: center
+        margin: 0 0 14px 0
+        grid-row: 2 / 3
+        grid-column: 2 / 3
+        +fixImageBug
+        background-image: url("../img/icons/arrow-rigth.svg")
+        background-repeat: no-repeat
+        background-position: center
+        background-color: transparent
+        width: 26px
+        height: 12px
+        border: none
+        z-index: 2
+        outline: none
+        transition: all 0.20s
+        cursor: pointer
+
+        &:hover
+          transform: scale(1.1) translateX(4px)

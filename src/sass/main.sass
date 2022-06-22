@@ -1,0 +1,51 @@
+@import "~normalize.css"
+
+@import "./fonts/manrope"
+
+@import "page-header"
+@import "page-main"
+@import "page-footer"
+@import "page-animations"
+@import "page-error"
+
+*
+  margin: 0
+  padding: 0
+  box-sizing: border-box
+
+html
+  font-size: 62.5%
+  scroll-behavior: smooth
+
+h1,h2,h3,h4,h5,h6
+  margin: 0
+  padding: 0
+
+body
+  display: grid
+  grid-template-rows: [header] 136px [main] 1fr [footer] 244px
+  min-width: 1340px
+  min-height: 100vh
+  font-family: "Manrope-Regular"
+  font-weight: 400
+  font-style: normal
+  font-size: 1.6rem
+  line-height: 2.08rem
+  color: rgba(33, 30, 29, 1)
+
+.container
+  width: 1340px
+  margin: 0 auto
+
+.visually-hidden
+  position: absolute
+  width: 1px
+  height: 1px
+  margin: -1px
+  border: 0
+  padding: 0
+  white-space: nowrap
+  clip-path: inset(100%)
+  clip: rect(0 0 0 0)
+  overflow: hidden
+  
